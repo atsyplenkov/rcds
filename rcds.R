@@ -37,7 +37,7 @@ for(y in f.years){
     r[['month']] = f.months # запрашиваемые месяцы, генерируется последовательность строковых чисел с "0" перед единицами
     r[['day']] = f.days # запрашиваемые дни, генерируется последовательность строковых чисел с "0" перед единицами
     r[['time']] = f.hours # часы
-    r[['dataset']] = "reanalysis-era5-single-levels" # набор данных с сайта ()
+    r[['dataset_short_name']] = "reanalysis-era5-single-levels" # набор данных с сайта ()
     r[['target']] = paste0("era5_", y, "_Jan-Dec", ".nc")
     print(r)
     ncfile <- wf_request(user = UID,
